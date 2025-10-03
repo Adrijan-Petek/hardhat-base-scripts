@@ -1,0 +1,20 @@
+{
+  "name": "hardhat-base-scripts",
+  "version": "1.0.0",
+  "description": "Hardhat deployment and interaction scripts for Base mainnet",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "lint": "echo \"No lint config yet\"",
+    "deploy:erc20": "npx hardhat run scripts/deploy-erc20.js --network baseMainnet"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.2"
+  }
+}
